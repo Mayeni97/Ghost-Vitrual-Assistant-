@@ -6,17 +6,17 @@ import wikipedia
 import pyjokes
 
 listener = sr.Recognizer()
-engine =  pyttsx3.init()
+engine = pyttsx3.init()
 rate = engine.getProperty('rate')   # getting details of current speaking rate
 engine.setProperty('rate', 150)     # setting up new voice rate
-voices = engine.getProperty('voices') 
-engine.setProperty('voice', voices[0].id)    #changing index, changes voices. 0 for male 
-#engine.setProperty('voice', voices[1].id)   #changing index, changes voices. 1 for female 
+voices = engine.getProperty('voices') # changing index, changes voices. 0 for male
+engine.setProperty('voice', voices[0].id) # engine.setProperty('voice', voices[1].id)   #changing index, changes voices. 1 for female
 
 
 def talk(text):
     engine.say(text)
     engine.runAndWait()
+
 
 def take_command():
     command = ''
@@ -33,6 +33,7 @@ def take_command():
         pass
 
     return command
+
 
 def run_assistant():
     command = take_command()
@@ -60,15 +61,11 @@ def run_assistant():
         talk(pyjokes.get_joke())
     else:
         talk('Say that again, please')
-    
- 
+
+
 engine.say("Hello, I'm Ghost, your virtual assistant.")
 engine.say("How can I help you?")
 engine.runAndWait()
 
-while True:
+while (True):
     run_assistant()
-
-        
-
-
