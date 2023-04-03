@@ -55,7 +55,7 @@ def run_assistant():
         date = datetime.datetime.now().strftime("%B %d, %Y")
         print(date)
         talk("Today is" + date)
-    elif "Do you want to go on a date with me?" in command:
+    elif "with me" in command:
         talk("Arent you dating someone?, plus i'm dating WIFI at the moment")
     elif "joke" in command:
         talk(pyjokes.get_joke())
