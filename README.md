@@ -11,7 +11,7 @@ pywhatkit
 datetime
 wikipedia
 pyjokes
-You can install these packages by running the following **requirements.txt** in your terminal:
+You can install these packages by running the following **[requirements](requirements.txt)** in your terminal:
 
 Copy code
 pip install SpeechRecognition pyttsx3 pywhatkit datetime wikipedia pyjokes
@@ -30,7 +30,7 @@ Contributing
 If you would like to contribute to this project, please feel free to fork the repository and submit a pull request. We welcome all contributions, including bug fixes, feature requests, and documentation improvements.
 
 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the **[LICENSE](LICENSE.md)** file for details.
 
 Acknowledgments
 We would like to thank the creators of the SpeechRecognition, pyttsx3, pywhatkit, datetime, wikipedia, and pyjokes packages for their contributions to this project.
