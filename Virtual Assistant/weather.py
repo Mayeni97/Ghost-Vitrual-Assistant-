@@ -2,6 +2,7 @@ from pyowm import OWM
 from geopy import Nominatim
 import datetime
 import weatherstack
+from googletrans import Translator
 
 class Weather:
     # location of the weather
